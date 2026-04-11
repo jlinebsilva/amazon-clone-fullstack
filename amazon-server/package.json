@@ -1,0 +1,29 @@
+{
+  "name": "amazon-server",
+  "version": "1.0.0",
+  "description": "- [Node.js](https://nodejs.org/pt-br)\r - [Express](https://expressjs.com/)",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "tsx watch src/index.ts",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "jlinebsilva",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.1",
+    "express": "^5.2.1",
+    "pg": "^8.20.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.2",
+    "jest": "^30.3.0",
+    "typescript": "^6.0.2"
+  }
+}
