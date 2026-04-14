@@ -6,11 +6,13 @@ const router = Router()
 
 router.post("/sellers", seller.createSeller)
 router.get("/sellers", seller.getSellers)
+router.get("/sellers/:id", seller.getSellerById)
 router.put("/sellers/:id", seller.updateSeller)
 router.delete("/sellers/:id", seller.deleteSeller)
 
 router.post("/products", product.createProduct)
 router.get("/products", product.getProducts)
+router.get("/products/:id", product.getProductById)
 router.put("/products/:id", product.updateProduct)
 router.delete("/products/:id", product.deleteProduct)
 
