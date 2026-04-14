@@ -2,8 +2,8 @@ import { DataTypes, Model } from "sequelize";
 import { sequelize } from '../config/database';
 
 export class Seller extends Model {
-    public id!: number
-    public name!: string
+    private id!: number
+    private name!: string
 }
 
 Seller.init(
