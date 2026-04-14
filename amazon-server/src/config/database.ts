@@ -19,3 +19,10 @@ export const sequelize = new Sequelize(
         logging: false
     }
 )
+
+sequelize.authenticate().then((function () {
+    console.info("\n🟢 Banco de dados conectado com sucesso\n")
+
+})).catch(function (err) {
+    console.error(`\n🔴 Não foi possível conectar no banco de dados = ${err}\n`)
+})
