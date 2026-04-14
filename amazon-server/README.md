@@ -27,6 +27,8 @@
 
 > `GET /sellers`
 
+> `GET /sellers/:id`
+
 > `PUT /sellers/:id`
 
 > `DELETE /sellers/:id`
@@ -36,6 +38,8 @@
 > `POST /products`
 
 > `GET /products`
+
+> `GET /products/:id`
 
 > `PUT /products/:id`
 
