@@ -9,9 +9,10 @@
     // See also https://aka.ms/tsconfig/module
     "module": "esnext",
     "moduleResolution": "bundler",
+    "ignoreDeprecations": "6.0",
     "target": "ES2023",
     "esModuleInterop": true,
-    "types": [],
+    "types": ["jest"],
 
     // For nodejs:
     // "lib": ["esnext"],
@@ -43,5 +44,8 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-  }
+  },
+
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "__tests__", "jest.config.ts"]
 }
